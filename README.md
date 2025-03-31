@@ -57,8 +57,11 @@ Backend Setup (Flask)
 Clone the repository:
 
 git clone https://github.com/nishabourde/drone-survey-frontend.git
-cd drone-survey/backend
+cd frontend
 
+git clone https://github.com/nishabourde/drone-survey-backend.git
+
+cd backend
 Create a virtual environment and install dependencies:
 
 python -m venv venv
