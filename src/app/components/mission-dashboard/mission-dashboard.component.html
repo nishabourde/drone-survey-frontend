@@ -1,6 +1,5 @@
 <h2>Drone Missions</h2>
 
-<!-- ✅ Create/Edit Form -->
 <form (submit)="onSubmit($event)">
   <input type="text" placeholder="Mission Name" [(ngModel)]="mission.name" name="name" required />
   <input type="text" placeholder="Status" [(ngModel)]="mission.status" name="status" required />
@@ -10,7 +9,6 @@
   <button type="submit">{{ mission._id ? 'Update Mission' : 'Create Mission' }}</button>
 </form>
 
-<!-- ✅ Missions Table -->
 <table mat-table [dataSource]="missions" class="mat-elevation-z8">
   <ng-container matColumnDef="name">
     <th mat-header-cell *matHeaderCellDef> Mission Name </th>
@@ -32,7 +30,6 @@
     <td mat-cell *matCellDef="let mission"> {{ mission.progress }}% </td>
   </ng-container>
 
-  <!-- ✅ Actions Column (Edit + Delete) -->
   <ng-container matColumnDef="actions">
     <th mat-header-cell *matHeaderCellDef> Actions </th>
     <td mat-cell *matCellDef="let mission">

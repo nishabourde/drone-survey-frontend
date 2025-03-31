@@ -2,7 +2,6 @@ import { TestBed, ComponentFixture } from '@angular/core/testing';
 import { MissionDashboardComponent } from './mission-dashboard.component';
 import { MissionService } from '../../service/mission.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import { of, throwError } from 'rxjs';
 
 describe('MissionDashboardComponent', () => {
   let component: MissionDashboardComponent;

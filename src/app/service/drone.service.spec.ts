@@ -2,7 +2,7 @@ import { TestBed } from '@angular/core/testing';
 import axios from 'axios';
 import { DroneService } from './drone.service';
 
-jest.mock('axios');  // ✅ Mock axios
+jest.mock('axios'); 
 
 describe('DroneService', () => {
   let service: DroneService;
@@ -16,7 +16,7 @@ describe('DroneService', () => {
     mockAxios = axios as jest.Mocked<typeof axios>;
   });
 
-  // ✅ Test getDrones()
+
   it('should fetch all drones', async () => {
     const mockDrones = [{ _id: '1', name: 'Drone A' }, { _id: '2', name: 'Drone B' }];
     mockAxios.get.mockResolvedValue({ data: mockDrones });
@@ -27,7 +27,7 @@ describe('DroneService', () => {
     expect(result).toEqual(mockDrones);
   });
 
-  // ✅ Test createDrone()
+
   it('should create a new drone', async () => {
     const newDrone = { name: 'Drone X', model: 'X1' };
     const mockResponse = { _id: '3', ...newDrone };
@@ -40,7 +40,7 @@ describe('DroneService', () => {
     expect(result).toEqual(mockResponse);
   });
 
-  // ✅ Test updateDrone()
+
   it('should update a drone', async () => {
     const droneUpdate = { _id: '1', name: 'Updated Drone' };
     const updatedData = { name: 'Updated Drone' };
@@ -53,7 +53,7 @@ describe('DroneService', () => {
     expect(result).toEqual(updatedData);
   });
 
-  // ✅ Test deleteDrone()
+
   it('should delete a drone', async () => {
     mockAxios.delete.mockResolvedValue({ data: { success: true } });
 
@@ -63,7 +63,7 @@ describe('DroneService', () => {
     expect(result).toEqual({ success: true });
   });
 
-  // ✅ Test updateDrone() - Handle error case
+
   it('should handle errors when updating a drone', async () => {
     const droneUpdate = { _id: '1', name: 'Drone Error' };
   

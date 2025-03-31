@@ -5,7 +5,6 @@ import { MatTableModule } from '@angular/material/table';
 import { FormsModule } from '@angular/forms';
 import { Mission } from '../../models/mission';
 import { MatSnackBar } from '@angular/material/snack-bar';
-// import { MqttMissionService } from '../../service/mqtt-service';
 
 @Component({
   selector: 'app-mission-dashboard',
@@ -15,7 +14,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 })
 
 export class MissionDashboardComponent implements OnInit {
-  displayedColumns: string[] = ['name', 'location', 'status', 'progress', 'actions']; // ✅ Add "actions"
+  displayedColumns: string[] = ['name', 'location', 'status', 'progress', 'actions'];
 
   missions: any[] = [];
   selectedMission: any = null;

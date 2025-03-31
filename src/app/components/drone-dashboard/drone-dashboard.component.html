@@ -1,6 +1,5 @@
 <h2>Drone Fleet</h2>
 
-<!-- Create/Edit Form -->
 <form (submit)="onSubmit($event)">
   <input type="text" placeholder="Drone Name" [(ngModel)]="drone.name" name="name" required />
   <input type="text" placeholder="Type" [(ngModel)]="drone.type" name="type" required />
@@ -9,7 +8,6 @@
   <button type="submit">{{ drone._id ? 'Update Drone' : 'Add Drone' }}</button>
 </form>
 
-<!-- Drones Table -->
 <table mat-table [dataSource]="drones" class="mat-elevation-z8">
   <ng-container matColumnDef="name">
     <th mat-header-cell *matHeaderCellDef> Name </th>
