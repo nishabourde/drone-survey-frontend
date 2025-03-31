@@ -1,0 +1,44 @@
+button {
+    margin: 5px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  .success-snackbar {
+    background-color: #4caf50 !important; // Green for success
+    color: white !important;
+  }
+  
+  .error-snackbar {
+    background-color: #f44336 !important; // Red for errors
+    color: white !important;
+  }
+  
+  .info-snackbar {
+    background-color: #2196f3 !important; // Blue for updates
+    color: white !important;
+  }
+  
+  .delete-snackbar {
+    background-color: #ff9800 !important; // Orange for delete
+    color: white !important;
+  }
+  
+  .snackbar-danger {
+    background-color: #ff4d4d !important;
+    color: white !important;
+  }
+  
+  .snackbar-error {
+    background-color: #ffcc00 !important;
+    color: black !important;
+  }
+  

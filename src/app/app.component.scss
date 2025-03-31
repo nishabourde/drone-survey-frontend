@@ -1,0 +1,20 @@
+nav {
+    margin-bottom: 20px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 15px;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .active {
+    color: #ff4081; /* Different color for active link */
+  }
+  
